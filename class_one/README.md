@@ -38,6 +38,8 @@ ret 返回
 clang -S -fobjc-arc .\helloword.ll -o .\helloword.s
 ```
 
+tips: 目标文件和可执行文件都由机器语言指令组成。但是目标文件只包含编译器为你编写的代码翻译的机器语言代码，可执行文件中还包含你编写程序中使用的库函数和启动代码的机器代码。
+
 ```
 // generate object file
 clang -fmodules -c .\helloword.s -o .\helloword.o
